@@ -1,0 +1,56 @@
+.link {
+    text-decoration: none;
+    color: inherit;
+
+    &--whatsapp,
+    &--phone,
+    &--map-marker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .link {
+            &__icon {
+                width: 25px;
+                height: 25px;
+                flex: 0 0 25px;
+                margin-right: 18px;
+            }
+        }
+    }
+
+}
+
+.button {
+    min-width: 250px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $btn-gradient;
+    box-shadow: $btn-box-shadow;
+    border: none;
+    border-radius: 15px;
+
+    font-family: $fontFutura;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: $blue;
+}
+
+.logo {
+    display: flex;
+
+    & svg {
+        width: inherit;
+        height: inherit;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}

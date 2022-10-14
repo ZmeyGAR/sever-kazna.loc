@@ -1,0 +1,54 @@
+$maxWidth: 1400px;
+
+$mini-tablet: 568px;
+
+// ----------------------------------------
+$white : #f5f5f5;
+$black: #3B3B3A;
+$sky: #009EE3;
+$blue: #0085CD;
+
+$btn-gradient: linear-gradient(270deg, #9CC6EB, #FFFFFF 60%);
+$btn-box-shadow: 2px 2px 4px #87B6E2;
+// ----------------------------------------
+@import './fonts.scss';
+
+$fontSonger: 'SONGER_SE',
+sans-serif;
+$fontFutura: 'afuturaortolt',
+sans-serif;
+
+// ----------------------------------------
+html {
+    font-size: 10px;
+}
+
+body {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+
+    font-family: $fontFutura;
+    font-weight: 400;
+    color: $black;
+}
+
+main {
+    flex: 1 1 auto;
+    padding-top: var(--header-height);
+}
+
+*[class*=__container] {
+    max-width: calc($maxWidth + 20px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@import './UI.scss';
+@import './header/header.scss';
+
+@import './sections/hero.scss';
+
+@import './footer/footer.scss';

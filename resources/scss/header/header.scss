@@ -1,0 +1,84 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $white;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 37px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            width: calc(100% - 20px * 2);
+            height: 0;
+            border: 1px solid #DEE1E9;
+        }
+    }
+
+    &__logo {
+        max-width: 240px;
+        max-height: 50px;
+        margin: 0 auto;
+
+        & .logo {
+
+            &__img {
+                width: 62px;
+                height: 50px;
+            }
+
+            &__text {
+                width: 167px;
+                height: 50px;
+
+                & svg {
+                    fill: $black;
+                }
+            }
+        }
+
+        @media(min-width: $mini-tablet) {
+            margin: 0;
+        }
+
+    }
+
+    &__contacts {
+        width: 100%;
+        min-width: 280px;
+        padding: 20px 0 0;
+
+        font-family: $fontSonger;
+        font-weight: 700;
+        font-size: 8vw;
+        line-height: 1.3em;
+        color: $blue;
+        justify-content: flex-end;
+
+        &-item {
+            max-width: 100%;
+            width: max-content;
+
+            & .link--whatsapp .link__icon {
+                fill: $blue;
+            }
+        }
+
+        @media(min-width: $mini-tablet) {
+            width: auto;
+            min-width: none;
+            font-size: 3rem;
+            padding: 0;
+        }
+    }
+
+}

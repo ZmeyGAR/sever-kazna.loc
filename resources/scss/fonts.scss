@@ -1,0 +1,73 @@
+/* SONGER_SE */
+@font-face {
+    font-family: "SONGER_SE_Regular";
+    src: url("../../public/fonts/SONGER_SE_Regular.otf") format("otf"),
+        url("../../public/fonts/SONGER_SE_Regular.ttf") format("truetype"),
+        url("../../public/fonts/SONGER_SE_Regular.woff") format("woff"),
+        url("../../public/fonts/SONGER_SE_Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SONGER_SE";
+    src: url("../../public/fonts/SONGER_SE_Medium.otf") format("otf"),
+        url("../../public/fonts/SONGER_SE_Medium.ttf") format("truetype"),
+        url("../../public/fonts/SONGER_SE_Medium.woff") format("woff"),
+        url("../../public/fonts/SONGER_SE_Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SONGER_SE";
+    src: url("../../public/fonts/SONGER_SE_Bold.otf") format("otf"),
+        url("../../public/fonts/SONGER_SE_Bold.ttf") format("truetype"),
+        url("../../public/fonts/SONGER_SE_Bold.woff") format("woff"),
+        url("../../public/fonts/SONGER_SE_Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SONGER_SE";
+    src: url("../../public/fonts/SONGER_SE_ExtraBold.otf") format("otf"),
+        url("../../public/fonts/SONGER_SE_ExtraBold.ttf") format("truetype"),
+        url("../../public/fonts/SONGER_SE_ExtraBold.woff") format("woff"),
+        url("../../public/fonts/SONGER_SE_ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SONGER_SE";
+    src: url("../../public/fonts/SONGER_SE_Heavy.otf") format("otf"),
+        url("../../public/fonts/SONGER_SE_Heavy.ttf") format("truetype"),
+        url("../../public/fonts/SONGER_SE_Heavy.woff") format("woff"),
+        url("../../public/fonts/SONGER_SE_Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* SONGER_SE */
+
+
+@font-face {
+    font-family: "afuturaortolt";
+    src:
+        url("../../public/fonts/afuturaortoltbold.ttf") format("truetype"),
+        url("../../public/fonts/afuturaortoltbold.woff") format("woff"),
+        url("../../public/fonts/afuturaortoltbold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "afuturaortolt";
+    src:
+        url("../../public/fonts/afuturaortoltlight.ttf") format("truetype"),
+        url("../../public/fonts/afuturaortoltlight.woff") format("woff"),
+        url("../../public/fonts/afuturaortoltlight.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
