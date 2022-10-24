@@ -27,9 +27,18 @@
 
     <title>@yield('meta.title', config('app.name'))</title>
 
-    @vite(['resources/css/notification.min.css', 'resources/js/notification.min.js'])
-    @vite(['resources/css/sweetalert.default.theme.min.css', 'resources/js/sweetalert2.all.js'])
-    @vite(['resources/css/loading.min.css', 'resources/css/lbbutton.min.css'])
+    <link rel="stylesheet" href="/vendor/notification.min.css">
+    <script src="/vendor/notification.min.js" defer></script>
+
+    <link rel="stylesheet" href="/vendor/sweetalert.default.theme.min.css">
+    <script src="/vendor/sweetalert2.all.js" defer></script>
+    
+    <link rel="stylesheet" href="/vendor/loading.min.css">
+    <link rel="stylesheet" href="/vendor/lbbutton.min.css">
+
+    {{-- @vite(['resources/css/notification.min.css', 'resources/js/notification.min.js']) --}}
+    {{-- @vite(['resources/css/sweetalert.default.theme.min.css', 'resources/js/sweetalert2.all.js']) --}}
+    {{-- @vite(['resources/css/loading.min.css', 'resources/css/lbbutton.min.css']) --}}
     @vite(['resources/scss/normalize.scss', 'resources/scss/app.scss'])
     @vite(['resources/js/app.js'])
 

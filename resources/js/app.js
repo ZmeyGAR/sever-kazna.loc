@@ -114,7 +114,6 @@ async function showFormResponse(responseData = {}) {
 
 }
 const DOMContentLoadedHandler = () => {
-    getConsultationForm()
     btnsConsultationForm.forEach(btn => btn.addEventListener('click', getConsultationForm))
 }
 
