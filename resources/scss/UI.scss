@@ -22,10 +22,10 @@
 }
 
 .button {
-    min-width: 250px;
+    min-width: 260px;
     max-width: 350px;
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,12 +33,13 @@
     box-shadow: $btn-box-shadow;
     border: none;
     border-radius: 15px;
-
+    cursor: pointer;
     font-family: $fontFutura;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.2em;
     color: $blue;
+    margin: 0 4px 16px;
 }
 
 .logo {
@@ -53,4 +54,82 @@
 .contacts {
     display: flex;
     flex-direction: column;
+}
+
+.form {
+    & fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    & input[type=text],
+    & input[type=tel],
+    & input[type=email] {
+        font-family: $fontFutura;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.2em;
+        border: 1px solid transparent;
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    &__invalid {
+        border: 1px solid red !important;
+    }
+
+    &__error {
+        padding: 10px 0;
+        color: $black;
+    }
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+
+    & label {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+
+        & a {
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
+
+    & input[type=checkbox] {
+        display: block;
+        width: 25px;
+        height: 25px;
+        flex: 0 0 25px;
+        border-radius: 5px;
+        margin-right: 22px;
+    }
+
+    &__error {
+        flex: 1 1 auto;
+        color: $black;
+        font-weight: 900;
+    }
+}
+
+.error {
+    color: $black;
+    font-weight: 900;
+
+    &__icon {
+        max-width: 20px;
+        width: 100%;
+    }
 }

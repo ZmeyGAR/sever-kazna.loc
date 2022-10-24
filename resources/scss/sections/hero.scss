@@ -1,55 +1,100 @@
 .hero {
+    position: relative;
     height: 100%;
-    min-height: calc(100vh - var(--header-height));
-
-    // &__container {
+    width: 100%;
+    min-height: min(calc($maxWidth - var(--header-height)), calc(100vh - var(--header-height)));
     display: flex;
     flex-wrap: wrap;
-    // }
+
+    overflow: hidden;
 
     &__content,
     &__banner {
-        max-width: 50%;
+        max-width: 100%;
+        min-width: 280px;
         width: 100%;
-        flex: 1 1 50%;
-        padding-top: 70px;
+        // padding-top: 70px;
+
+        @media(min-width: $notepad) {
+            max-width: 50%;
+            flex: 1 1 50%;
+        }
     }
 
     &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 0 0;
         padding-left: max(20px, calc((100vw - $maxWidth) /2));
+        padding-right: 20px;
+        z-index: 2;
+
+        background: #f5f5f5c9;
     }
 
     &__banner {
+
+        position: relative;
+        flex: 0 0 50%;
+        display: flex;
+        z-index: 1;
+
+        @media(max-width: calc($notepad - 1px)) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             display: block;
             padding: 0;
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
+            // object-fit: contain;
         }
     }
 
     &__title {
         font-family: $fontSonger;
-        font-size: 5.3rem;
+        font-size: min(7vw, 5.3rem);
         line-height: 1.2em;
         font-weight: 700;
         color: $blue;
         margin: 0;
-        margin-bottom: 60px;
+        text-align: center;
+        margin-bottom: 40px;
 
         & .strong {
-            font-size: 8rem;
+            font-size: min(10.4vw, 8rem);
             line-height: 1.2em;
+        }
+
+        @media(min-width: $notepad) {
+            text-align: start;
+            font-size: min(3.7vw, 5.3rem);
+
+            & .strong {
+                font-size: min(5.5vw, 8rem);
+            }
         }
     }
 
     &__list {
         font-family: $fontFutura;
-        font-size: 2.5rem;
+        font-size: min(5vw, 2.5rem);
         line-height: 1.2em;
         color: $black;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
 
         & li {
             position: relative;
@@ -65,5 +110,162 @@
                 color: $blue;
             }
         }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        @media(min-width: $notepad) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__benefits {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        padding-left: min(20px, calc((100vw - $maxWidth) /2));
+        overflow-y: clip;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            width: 150%;
+            height: 100%;
+            background: $gradientToSky;
+            z-index: 0;
+            border-top-right-radius: 50px;
+
+            @media(min-width: $mini-tablet) {
+                transform: translate(15%, 0) skewX(30deg);
+                transform-origin: bottom left;
+            }
+
+            @media(min-width: $notepad) {
+                width: 100vw;
+            }
+        }
+
+        &-item {
+            position: relative;
+            max-width: 50%;
+            min-width: 280px;
+            width: 100%;
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+
+            font-family: $fontSonger;
+            font-size: min(8vw, 3rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: white;
+            z-index: 1;
+            padding: 20px 0;
+
+            &--clock,
+            &--shield,
+            &--star,
+            &--money-bag {
+                &::before {
+                    content: '';
+                    width: 60px;
+                    height: 60px;
+                    display: inline-flex;
+                    flex: 0 0 60px;
+                    margin-right: 18px;
+                    animation: pulse 4s infinite;
+
+                }
+            }
+
+            &--clock {
+                &::before {
+                    background: url('../../../public/icons/clock.png') 0 0/contain no-repeat;
+                }
+            }
+
+            &--shield {
+                &::before {
+                    background: url('../../../public/icons/shield.png') 0 0/contain no-repeat;
+                }
+            }
+
+            &--star {
+                &::before {
+                    background: url('../../../public/icons/star.png') 0 0/contain no-repeat;
+                }
+            }
+
+            &--money-bag {
+                &::before {
+                    background: url('../../../public/icons/money-bag.png') 0 0/contain no-repeat;
+                }
+            }
+
+            &:not(.current) {
+                order: 1;
+            }
+
+            &.current {
+                order: -1;
+            }
+
+            &:nth-child(1) {
+                &::before {
+                    animation-delay: 1s;
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    animation-delay: 2s;
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    animation-delay: 3s;
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    animation-delay: 4s;
+                }
+            }
+        }
+
+        @media(min-width: $notepad) {
+            min-width: 700px;
+            justify-content: flex-start;
+
+            &-item {
+                min-width: 50%;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

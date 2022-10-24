@@ -1,0 +1,228 @@
+.consultation {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__popup {
+        max-width: 650px;
+        flex: 1 1 650px;
+        width: 100%;
+    }
+
+    &__container {
+        @media(min-width: $tablet) {
+            padding: 0 50px;
+        }
+    }
+
+    &__header {
+        position: relative;
+        display: flex;
+        width: 100%;
+        min-height: 77px;
+
+        &:after {
+            content: '';
+            display: flex;
+
+            max-width: 50%;
+            width: 100%;
+            flex: 1 1 50%;
+
+            background: $gradientToSky;
+            border-bottom-left-radius: 20px;
+            transform: translate(40px) skew(30deg);
+            transform-origin: top right;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        width: 100%;
+        min-height: 60px;
+        flex-direction: row-reverse;
+        padding: 0 20px;
+
+        &:after {
+            content: '';
+            display: flex;
+            width: 100%;
+            background: $gradientToSky;
+            border-bottom-right-radius: 20px;
+            transform: translate(-50px) skew(-30deg);
+            transform-origin: top;
+        }
+
+        @media(min-width: $tablet) {
+            padding-right: 50px;
+        }
+    }
+
+
+    &__title {
+        position: relative;
+        display: flex;
+        max-width: max-content;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        font-family: $fontSonger;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.2em;
+        color: $blue;
+        text-align: start;
+        padding-left: 20px;
+
+        @media(min-width: $tablet) {
+            padding-left: 50px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        color: $blue;
+        filter: drop-shadow(4px 4px 4px rgba(22, 101, 174, 0.25));
+        background: url('../../../public/icons/svg/form-bg.svg') center/contain no-repeat;
+
+        & input[type=text],
+        & input[type=tel],
+        & input[type=email] {
+            min-width: 280px;
+            width: 100%;
+            min-height: 40px;
+            padding: 0 12px;
+            color: $blue;
+            background: rgba(236, 244, 251, 0.7);
+            border: none;
+            border-radius: 15px;
+
+
+            &::-webkit-input-placeholder {
+                color: inherit;
+            }
+
+            &::-moz-placeholder {
+                color: inherit;
+            }
+
+            @media(min-width: $tablet) {
+                min-width: 250px;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+
+        &>* {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        & .input {
+            margin: 10px 0;
+        }
+
+        &--column-2 {
+            display: flex;
+            justify-content: space-between;
+
+            &>* {
+                min-width: max-content;
+                max-width: calc(50% - 30px);
+                width: 100%;
+            }
+        }
+
+    }
+
+    & .swal2 {
+
+        &-actions,
+        &-timer-progress-bar-container {
+            display: none !important;
+        }
+
+        &-close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            flex: 0 0 60px;
+            margin-bottom: -60px;
+
+            font-size: 5rem;
+            color: $white;
+        }
+    }
+}
+
+.response {
+
+    &__popup {
+        max-width: 650px;
+        flex: 1 1 650px;
+        width: 100%;
+    }
+
+    &__wrapper {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        background: $gradientToSky;
+        padding: 70px 130px;
+
+        font-family: $fontSonger;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.5em;
+        color: $white;
+
+        &>* {
+            margin-bottom: 20px;
+        }
+
+        & p {
+            font-size: 1.1rem;
+            line-height: 1.5em;
+        }
+    }
+
+    & .swal2 {
+
+        &-actions,
+        &-timer-progress-bar-container {
+            display: none !important;
+        }
+
+        &-close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            flex: 0 0 60px;
+            margin-bottom: -60px;
+
+            font-size: 5rem;
+        }
+    }
+}

@@ -26,7 +26,12 @@
     <link type="image/x-icon" href="/icons/favicons/favicon.ico" rel="icon">
 
     <title>@yield('meta.title', config('app.name'))</title>
-    @vite(['resources/scss/normalize.scss', 'resources/scss/app.scss', 'resources/js/app.js'])
+
+    @vite(['resources/css/notification.min.css', 'resources/js/notification.min.js'])
+    @vite(['resources/css/sweetalert.default.theme.min.css', 'resources/js/sweetalert2.all.js'])
+    @vite(['resources/css/loading.min.css', 'resources/css/lbbutton.min.css'])
+    @vite(['resources/scss/normalize.scss', 'resources/scss/app.scss'])
+    @vite(['resources/js/app.js'])
 
 </head>
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Forms\ConsultationFormController;
 use App\Http\Controllers\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::controller(ConsultationFormController::class)
+    ->prefix('ajax')
+    ->group(function () {
+        Route::get('consultationForm',  'render')->name('renderForm');
+        Route::post('postConsultationForm',  'validateForm')->name('validateForm');
+        Route::get('responseForm', 'responseForm')->name('responseForm');
+    });

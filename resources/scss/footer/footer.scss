@@ -10,7 +10,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, $blue, $sky);
+        background: $gradientToSky;
         border-top-left-radius: 50px;
 
         z-index: 0;

@@ -27,9 +27,4 @@
         </ul>
 
     </div>
-
-    <script>
-        const headerHeight = window.getComputedStyle(document.querySelector('header.header')).height;
-        document.head.insertAdjacentHTML('beforeend', `<style> :root{ --header-height: ${headerHeight};}</style>`)
-    </script>
 </header>

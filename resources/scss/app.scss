@@ -1,6 +1,8 @@
 $maxWidth: 1400px;
 
 $mini-tablet: 568px;
+$tablet: 768px;
+$notepad: 1024px;
 
 // ----------------------------------------
 $white : #f5f5f5;
@@ -10,6 +12,7 @@ $blue: #0085CD;
 
 $btn-gradient: linear-gradient(270deg, #9CC6EB, #FFFFFF 60%);
 $btn-box-shadow: 2px 2px 4px #87B6E2;
+$gradientToSky: linear-gradient(to right, $blue, $sky);
 // ----------------------------------------
 @import './fonts.scss';
 
@@ -33,6 +36,7 @@ body {
     font-family: $fontFutura;
     font-weight: 400;
     color: $black;
+    overflow-x: hidden;
 }
 
 main {
@@ -42,13 +46,25 @@ main {
 
 *[class*=__container] {
     max-width: calc($maxWidth + 20px);
+    width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+section {
+    margin-bottom: 70px;
 }
 
 @import './UI.scss';
 @import './header/header.scss';
 
 @import './sections/hero.scss';
+@import './sections/info-1.scss';
+@import './sections/info-2.scss';
+@import './sections/info-3.scss';
+
+
+@import './popup/popup.scss';
+@import './popup/consultationForm.scss';
 
 @import './footer/footer.scss';
