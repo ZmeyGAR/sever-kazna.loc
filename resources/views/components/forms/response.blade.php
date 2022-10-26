@@ -3,7 +3,7 @@
         <h3>{!! $title !!}</h3>
         <div class="response__icon">
             <svg>
-                <use xlink:href="../icons/svg/sprite.svg#{{ $icon }}"></use>
+                <use xlink:href="{{ env('APP_URL') }}/icons/svg/sprite.svg#{{ $icon }}"></use>
             </svg>
         </div>
         {!! $message !!}
