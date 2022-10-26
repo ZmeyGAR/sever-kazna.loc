@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -12,8 +11,6 @@ use Illuminate\Queue\SerializesModels;
 class ConsultationNotify extends Mailable
 {
     use Queueable, SerializesModels;
-
-    // severnaakazna67
 
     private $data = [];
     /**
@@ -34,7 +31,7 @@ class ConsultationNotify extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Consultation Notify',
+            subject: 'ЗАКАЗ КОНСУЛЬТАЦИИ',
         );
     }
 

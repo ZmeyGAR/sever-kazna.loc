@@ -43,12 +43,7 @@ class ConsultationFormController extends Controller
                 ->withInput();
         }
         try {
-            $data = [
-                'subject' => 'Тестовое письмо',
-                'body' => 'Тестовое письмо'
-            ];
-            Mail::to('lagutin1991@gmail.com')->send(new ConsultationNotify($data));
-
+            Mail::to(config('mail.from.address'))->send(new ConsultationNotify($validator->validated()));
             return redirect(route('responseForm', ['status' => 'success']));
         } catch (Exception $th) {
             return redirect(route('responseForm', ['status' => 'error']));
