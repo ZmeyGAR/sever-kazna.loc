@@ -11,9 +11,10 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 37px;
+        padding-top: 20px;
         padding-bottom: 20px;
         justify-content: space-between;
+        align-items: center;
 
         &::after {
             content: '';
@@ -72,6 +73,21 @@
 
             & .link--whatsapp .link__icon {
                 fill: $blue;
+            }
+
+            &:not(:first-child) {
+                font-size: 70%;
+                line-height: 1em;
+                padding-top: 10px;
+
+                & .link {
+                    & span {
+                        &>span {
+                            font-size: 70%;
+                            line-height: 1em;
+                        }
+                    }
+                }
             }
         }
 

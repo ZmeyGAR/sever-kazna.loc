@@ -21,7 +21,15 @@
                     <svg class="link__icon">
                         <use xlink:href="../icons/svg/sprite.svg#whatsapp"></use>
                     </svg>
-                    <span>+7 918 112-80-45</span>
+                    <span>+7 918 659-16-33</span>
+                </a>
+            </li>
+            <li class="contacts__item header__contacts-item contacts__item--litle">
+                <a class="link link--whatsapp" href="tel:+79181128045">
+                    <svg class="link__icon">
+                        <use xlink:href="../icons/svg/sprite.svg#whatsapp"></use>
+                    </svg>
+                    <span>+7 929 827-86-57 <br><span>(офис в Белореченске)</span></span>
                 </a>
             </li>
         </ul>

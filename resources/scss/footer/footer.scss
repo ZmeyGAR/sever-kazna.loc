@@ -73,6 +73,21 @@
             & .link--map-marker .link__icon {
                 fill: white;
             }
+
+            // &--litle {
+            //     font-size: 70%;
+            //     line-height: 1em;
+            //     padding-top: 10px;
+
+            //     & .link {
+            //         & span {
+            //             &>span {
+            //                 font-size: 70%;
+            //                 line-height: 1em;
+            //             }
+            //         }
+            //     }
+            // }
         }
 
         @media(min-width: $mini-tablet) {
