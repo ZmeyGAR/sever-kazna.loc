@@ -74,20 +74,23 @@
                 fill: white;
             }
 
-            // &--litle {
-            //     font-size: 70%;
-            //     line-height: 1em;
-            //     padding-top: 10px;
+            &--litle {
+                & .link {
+                    & span {
+                        font-size: 60%;
+                        line-height: 1em;
 
-            //     & .link {
-            //         & span {
-            //             &>span {
-            //                 font-size: 70%;
-            //                 line-height: 1em;
-            //             }
-            //         }
-            //     }
-            // }
+                        &>span {
+                            font-size: 75%;
+                            line-height: 1em;
+                        }
+                    }
+                }
+            }
+
+            &:not(:first-child) {
+                padding-top: 10px;
+            }
         }
 
         @media(min-width: $mini-tablet) {

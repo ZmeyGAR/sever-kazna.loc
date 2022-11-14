@@ -1,35 +1,23 @@
 {
-  "public/fonts/SONGER_SE_Regular.otf": {
-    "file": "assets/SONGER_SE_Regular.6ca25e6e.otf",
-    "src": "public/fonts/SONGER_SE_Regular.otf"
-  },
   "public/fonts/SONGER_SE_Medium.otf": {
     "file": "assets/SONGER_SE_Medium.ccf27c2b.otf",
     "src": "public/fonts/SONGER_SE_Medium.otf"
   },
-  "public/fonts/SONGER_SE_Bold.otf": {
-    "file": "assets/SONGER_SE_Bold.55273b99.otf",
-    "src": "public/fonts/SONGER_SE_Bold.otf"
-  },
-  "public/fonts/SONGER_SE_ExtraBold.otf": {
-    "file": "assets/SONGER_SE_ExtraBold.15e34fa2.otf",
-    "src": "public/fonts/SONGER_SE_ExtraBold.otf"
+  "public/fonts/SONGER_SE_Regular.otf": {
+    "file": "assets/SONGER_SE_Regular.6ca25e6e.otf",
+    "src": "public/fonts/SONGER_SE_Regular.otf"
   },
   "public/fonts/afuturaortoltbold.ttf": {
     "file": "assets/afuturaortoltbold.1249aff7.ttf",
     "src": "public/fonts/afuturaortoltbold.ttf"
   },
-  "public/fonts/SONGER_SE_Heavy.otf": {
-    "file": "assets/SONGER_SE_Heavy.bb23c03a.otf",
-    "src": "public/fonts/SONGER_SE_Heavy.otf"
+  "public/fonts/afuturaortoltlight.ttf": {
+    "file": "assets/afuturaortoltlight.efbcd047.ttf",
+    "src": "public/fonts/afuturaortoltlight.ttf"
   },
   "resources/scss/icons/clock.png": {
     "file": "assets/clock.cc7ef7d3.png",
     "src": "resources/scss/icons/clock.png"
-  },
-  "public/fonts/afuturaortoltlight.ttf": {
-    "file": "assets/afuturaortoltlight.efbcd047.ttf",
-    "src": "public/fonts/afuturaortoltlight.ttf"
   },
   "resources/scss/icons/shield.png": {
     "file": "assets/shield.e46651b1.png",
@@ -42,6 +30,18 @@
   "resources/scss/icons/money-bag.png": {
     "file": "assets/money-bag.befbad79.png",
     "src": "resources/scss/icons/money-bag.png"
+  },
+  "public/fonts/SONGER_SE_Bold.otf": {
+    "file": "assets/SONGER_SE_Bold.55273b99.otf",
+    "src": "public/fonts/SONGER_SE_Bold.otf"
+  },
+  "public/fonts/SONGER_SE_ExtraBold.otf": {
+    "file": "assets/SONGER_SE_ExtraBold.15e34fa2.otf",
+    "src": "public/fonts/SONGER_SE_ExtraBold.otf"
+  },
+  "public/fonts/SONGER_SE_Heavy.otf": {
+    "file": "assets/SONGER_SE_Heavy.bb23c03a.otf",
+    "src": "public/fonts/SONGER_SE_Heavy.otf"
   },
   "public/fonts/SONGER_SE_Regular.ttf": {
     "file": "assets/SONGER_SE_Regular.d7d65fbd.ttf",
@@ -59,17 +59,13 @@
     "file": "assets/SONGER_SE_ExtraBold.a96dad54.ttf",
     "src": "public/fonts/SONGER_SE_ExtraBold.ttf"
   },
-  "public/fonts/afuturaortoltbold.woff": {
-    "file": "assets/afuturaortoltbold.9d606f16.woff",
-    "src": "public/fonts/afuturaortoltbold.woff"
+  "public/fonts/afuturaortoltlight.woff": {
+    "file": "assets/afuturaortoltlight.dc674e6e.woff",
+    "src": "public/fonts/afuturaortoltlight.woff"
   },
   "public/fonts/SONGER_SE_Heavy.ttf": {
     "file": "assets/SONGER_SE_Heavy.ae2521d0.ttf",
     "src": "public/fonts/SONGER_SE_Heavy.ttf"
-  },
-  "public/fonts/afuturaortoltlight.woff": {
-    "file": "assets/afuturaortoltlight.dc674e6e.woff",
-    "src": "public/fonts/afuturaortoltlight.woff"
   },
   "public/fonts/SONGER_SE_Regular.woff": {
     "file": "assets/SONGER_SE_Regular.ed6e96c3.woff",
@@ -79,25 +75,21 @@
     "file": "assets/SONGER_SE_Medium.c8f5e45e.woff",
     "src": "public/fonts/SONGER_SE_Medium.woff"
   },
-  "public/fonts/SONGER_SE_Bold.woff": {
-    "file": "assets/SONGER_SE_Bold.fe9e05a7.woff",
-    "src": "public/fonts/SONGER_SE_Bold.woff"
+  "public/fonts/afuturaortoltbold.woff": {
+    "file": "assets/afuturaortoltbold.9d606f16.woff",
+    "src": "public/fonts/afuturaortoltbold.woff"
   },
   "public/fonts/SONGER_SE_ExtraBold.woff": {
     "file": "assets/SONGER_SE_ExtraBold.d47b0b55.woff",
     "src": "public/fonts/SONGER_SE_ExtraBold.woff"
   },
-  "public/fonts/afuturaortoltbold.woff2": {
-    "file": "assets/afuturaortoltbold.b6973162.woff2",
-    "src": "public/fonts/afuturaortoltbold.woff2"
+  "public/fonts/SONGER_SE_Bold.woff": {
+    "file": "assets/SONGER_SE_Bold.fe9e05a7.woff",
+    "src": "public/fonts/SONGER_SE_Bold.woff"
   },
   "public/fonts/SONGER_SE_Heavy.woff": {
     "file": "assets/SONGER_SE_Heavy.9609c299.woff",
     "src": "public/fonts/SONGER_SE_Heavy.woff"
-  },
-  "public/fonts/afuturaortoltlight.woff2": {
-    "file": "assets/afuturaortoltlight.2132187f.woff2",
-    "src": "public/fonts/afuturaortoltlight.woff2"
   },
   "public/fonts/SONGER_SE_Regular.woff2": {
     "file": "assets/SONGER_SE_Regular.f413bc9d.woff2",
@@ -107,13 +99,21 @@
     "file": "assets/SONGER_SE_Medium.c7db2e94.woff2",
     "src": "public/fonts/SONGER_SE_Medium.woff2"
   },
-  "public/fonts/SONGER_SE_Bold.woff2": {
-    "file": "assets/SONGER_SE_Bold.f4e06ab4.woff2",
-    "src": "public/fonts/SONGER_SE_Bold.woff2"
+  "public/fonts/afuturaortoltlight.woff2": {
+    "file": "assets/afuturaortoltlight.2132187f.woff2",
+    "src": "public/fonts/afuturaortoltlight.woff2"
   },
   "public/fonts/SONGER_SE_ExtraBold.woff2": {
     "file": "assets/SONGER_SE_ExtraBold.14e9d2ab.woff2",
     "src": "public/fonts/SONGER_SE_ExtraBold.woff2"
+  },
+  "public/fonts/SONGER_SE_Bold.woff2": {
+    "file": "assets/SONGER_SE_Bold.f4e06ab4.woff2",
+    "src": "public/fonts/SONGER_SE_Bold.woff2"
+  },
+  "public/fonts/afuturaortoltbold.woff2": {
+    "file": "assets/afuturaortoltbold.b6973162.woff2",
+    "src": "public/fonts/afuturaortoltbold.woff2"
   },
   "public/fonts/SONGER_SE_Heavy.woff2": {
     "file": "assets/SONGER_SE_Heavy.20f4023a.woff2",
@@ -130,7 +130,7 @@
     "isEntry": true
   },
   "resources/scss/app.scss": {
-    "file": "assets/app.53c83b52.css",
+    "file": "assets/app.3938d9fe.css",
     "src": "resources/scss/app.scss",
     "isEntry": true
   }

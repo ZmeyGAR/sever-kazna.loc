@@ -24,7 +24,7 @@
                     <span>+7 918 659-16-33</span>
                 </a>
             </li>
-            <li class="contacts__item header__contacts-item contacts__item--litle">
+            <li class="contacts__item header__contacts-item header__contacts-item--litle">
                 <a class="link link--whatsapp" href="tel:+79181128045">
                     <svg class="link__icon">
                         <use xlink:href="../icons/svg/sprite.svg#whatsapp"></use>
